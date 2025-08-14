@@ -13,7 +13,8 @@ export default function SearchPage({
   searchParams,
 }: SearchPageProps) {
   const router = useRouter();
-  const searchTerm = searchParams.get('q') || '';
+  const searchTerm =
+    typeof searchParams.q === 'string' ? searchParams.q : '';
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
