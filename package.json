@@ -23,6 +23,8 @@
     "@radix-ui/react-toast": "^1.2.15",
     "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.55.0",
+    "@tanstack/react-query": "^5.85.0",
+    "@tanstack/react-query-devtools": "^5.85.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.539.0",
@@ -33,7 +35,8 @@
     "react-hook-form": "^7.62.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^4.0.17"
+    "zod": "^4.0.17",
+    "zustand": "^5.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
