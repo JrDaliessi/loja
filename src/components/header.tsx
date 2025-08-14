@@ -17,6 +17,8 @@ import {
 
 import { SearchBox } from "./search-box";
 import { ThemeToggle } from "./theme-toggle";
+import { MiniCart } from './mini-cart';
+
 
 export function Header() {
   return (
@@ -73,6 +75,7 @@ export function Header() {
             <SearchBox />
           </div>
           <ThemeToggle />
+          <MiniCart />
         </div>
       </div>
     </header>
