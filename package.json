@@ -9,6 +9,7 @@
     "lint": "next lint",
     "preview": "pnpm build && pnpm start",
     "typecheck": "tsc --noEmit",
+    "types": "supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/lib/supabase.types.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:new": "pnpm supabase migration new",
     "db:push": "pnpm supabase db push"
