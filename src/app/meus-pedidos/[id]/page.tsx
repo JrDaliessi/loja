@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { createClient } from '@/lib/supabase/client'
 import { Database } from '@/lib/supabase.types'
 import Link from 'next/link'
 
@@ -18,7 +18,7 @@ type OrderDetails = Order & { order_items: OrderItem[] }
 export default function OrderConfirmationPage() {
   const params = useParams()
   const { id } = params
-  const supabase = createClientComponentClient<Database>()
+  const supabase = createClient()
 
   const [order, setOrder] = useState<OrderDetails | null>(null)
   const [loading, setLoading] = useState(true)
